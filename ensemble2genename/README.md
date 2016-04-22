@@ -9,7 +9,9 @@ Rscript, BiomaRt
 # Usage
 chmod 775 ensemble2genename.sh
 
+<pre>
 ./ensemble2genename.sh file.txt
+</pre>
 
 # Example
 
