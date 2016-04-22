@@ -2,6 +2,6 @@
 
 This is the repository for scripts that were used in paper:
 
-*Integrative functional genomics identifies regulatory mechanisms at coronary artery disease loci*\n
+*Integrative functional genomics identifies regulatory mechanisms at coronary artery disease loci*/n
 *Miller and Pjanic et al, 2016, Nature Communications.*
 
