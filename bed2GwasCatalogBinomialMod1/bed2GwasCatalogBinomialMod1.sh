@@ -116,6 +116,7 @@ do
   echo Overlapping Phenotype SNPs with input bed to calculate coverage: $var
 bedtools intersect -wb -a "$var".gwascatalog.bed.cut.sort.uniq.chrXY -b $last > "$var".gwascatalog.bed.cut.sort.uniq.overlap.input.int
 cut -f4-6 "$var".gwascatalog.bed.cut.sort.uniq.overlap.input.int > "$var".gwascatalog.bed.cut.sort.uniq.overlap.input.int.cut
+rm "$var".gwascatalog.bed.cut.sort.uniq.overlap.input.int
 done
 
 #create  R script
