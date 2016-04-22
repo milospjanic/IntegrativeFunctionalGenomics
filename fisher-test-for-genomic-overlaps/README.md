@@ -23,8 +23,12 @@ You need to run the script in bash shell, and you also need to have R installed,
 
 Run ./fishertest.sh with the three file names as subsequent multiple arguments
 
+<pre>
+./fishertest.sh file1.bed file2.bed background.bed**
+</pre>
+
 # Example output
-**./fishertest.sh file1.bed file2.bed background.bed**
+
 <pre>
 Number of uniq A overlapping B in genomic background 
 275
