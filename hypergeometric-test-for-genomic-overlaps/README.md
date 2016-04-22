@@ -13,7 +13,9 @@ We provide a combined ENCODE DHS data set in a bed file which you can use as a b
 
 # Example usage
 
-**./hypergeometric.sh file1.bed file2.bed background.bed**
+<pre>
+./hypergeometric.sh file1.bed file2.bed background.bed
+</pre>
 
 # Example output 
 <pre>
