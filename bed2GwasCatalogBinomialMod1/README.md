@@ -5,7 +5,7 @@ This script will connect to GWAS Catalog and download the entire data set, creat
 #Usage
 <pre>
 chmod 775 ./bed2GwasCatalogBinomial.sh
-./bed2GwasCatalogBinomial "Coronary artery" "Coronary heart" "Bipolar disorder" "Feminism" L2_TCCTGAGC_L002_peaks.bed 
+./bed2GwasCatalogBinomial "Coronary artery" "Coronary heart" "Bipolar disorder" "Feminism" file.bed 
 </pre>
 
 #Dependencies 
@@ -13,7 +13,7 @@ Rscript, bedtools (needs to be in $PATH)
 
 #Output
 <pre>
-~/bed2GwasCatalogBinomiaMod2 "Coronary artery" "Coronary heart" "Bipolar disorder" "Schizophrenia" "Height" "Rheumatoid arthritis" "Ulcerative colitis" "Crohn's disease" "Calcium" "Feminism" AHR.chipseq.out.cut.2000
+~/bed2GwasCatalogBinomiaMod2 "Coronary artery" "Coronary heart" "Bipolar disorder" "Schizophrenia" "Height" "Rheumatoid arthritis" "Ulcerative colitis" "Crohn's disease" "Calcium" "Feminism" file.bed
 --2016-04-22 01:31:30--  http://www.genome.gov/admin/gwascatalog.txt
 Resolving www.genome.gov (www.genome.gov)... 156.40.242.24
 Connecting to www.genome.gov (www.genome.gov)|156.40.242.24|:80... connected.
