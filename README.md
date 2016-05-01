@@ -12,11 +12,11 @@ The modification of the binomial test includes calculation of the binomial p-val
 
 Therefore, we modified the calculation of the probability to include the probability of base nucleotide to be present in the input regions that correspond the the tested GWAS category. This modification will better resolve p-values and will be less sensitive to the inflated p-values of smaller datasets, however the modification itself inflates p-values, which is something to consider when interpreting the results. One example of the better resolution of the p-values is the example of dataset of open chromatin regions in ENCODE Glioblastoma cell line. When tested with standard binomial test the brain related categories such as Schizophrenia and Bipolar disorder do not emerge tot the top of the list. Surprisingly, the top categories are not brain related and are relatively small datasets (CardiogramplusC4D, Diastolic blood pressure, Coronary heart disease). When modified binomial is applied, we obtained better resolution of brain related categories, with the Schizophrenia and Bipolar disorder being top categories.
 
-**Example of standard binomial test** that does not resolve GWAS categories well. Log p-value and fold change are proportional and the graph is nearly a diagonal.
+**Example of standard binomial test - Glioblastoma ENCODE cell line** that does not resolve GWAS categories well. Log p-value and fold change are proportional and the graph is nearly a diagonal.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.png)
 
-**Example of modified binomial test** that resolves GWAS categories. Note that modified binomial gives brain related categories as top ones, as expected for Glioblastoma ENCODE cell line.
+**Example of modified binomial test - Glioblastoma ENCODE cell line** that resolves GWAS categories. Note that modified binomial gives brain related categories as top ones, as expected for Glioblastoma ENCODE cell line.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.mod.png)
 
