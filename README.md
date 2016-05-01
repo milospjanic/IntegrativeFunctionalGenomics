@@ -20,7 +20,7 @@ Therefore, we modified the calculation of the probability to include the probabi
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.mod.png)
 
-Another example of the better separation of p-values is the example of open chromatin regions in CD4 T- cells ATAC-Seq. When tested with the standard binomial test the immune-related categories do not emerge to the top of the list, while the top categories are not immune- related and are again either relatively small or unrelated datasets (CardiogramplusC4D, Coronary Heart disease). When modified binomial is applied, we obtained better resolution of GWAS categories, with the immune- category, Rheumatoid arthritis, being the top category and another immune- category, Crohns disease, being among the top categories.
+Another example of the better separation of p-values is the example of ATAC-Seq open chromatin regions in CD4 T- cells. When tested with the standard binomial test the immune-related categories do not emerge to the top of the list, while the top categories are not immune- related and are again either relatively small or unrelated datasets (CardiogramplusC4D, Coronary Heart disease). When modified binomial is applied, we obtained better resolution of GWAS categories, with the immune- category, Rheumatoid arthritis, being the top category and another immune- category, Crohns disease, being among the top categories.
 
 **Example of standard binomial test - CD4 T-Cell ATAC-Seq GEO:GSE60682** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
 
