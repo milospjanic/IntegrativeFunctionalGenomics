@@ -24,8 +24,8 @@ Another example of the better separation of p-values is the example of open chro
 
 **Example of standard binomial test - CD4 T-Cell ATAC-Seq GEO:GSE60682** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
 
-![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.ENCODE.binomial.png)
+![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.png)
 
 **Example of modified binomial test - CD4 T-Cell ATAC-Seq GEO:GSE60682** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
 
-![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.ENCODE.binomial.mod.png)
+![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.mod.png)
