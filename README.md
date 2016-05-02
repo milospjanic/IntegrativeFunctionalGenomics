@@ -16,7 +16,7 @@ Therefore, we modified the calculation of the probability to include the probabi
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.png)
 
-**Example of modified binomial test - Glioblastoma ENCODE cell line**. We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives brain related categories (Schizophrenia and Bipolar disorder) as top ones, as expected for a cell line with the brain origin, such as Glioblastoma ENCODE cell line.
+**Example of modified binomial test - Glioblastoma ENCODE cell line**. We can see better resolution of GWAS categories by their p-values. Note that modified binomial gives brain related categories (Schizophrenia and Bipolar disorder) as top ones, as expected for a cell line with the brain origin, such as Glioblastoma ENCODE cell line.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.mod.png)
 
@@ -26,15 +26,17 @@ Another example of the better separation of p-values is the example of ATAC-Seq 
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.png)
 
-**Example of modified binomial test - CD4+ T-Cell ATAC-Seq GEO:GSE60682** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
+**Example of modified binomial test - CD4+ T-Cell ATAC-Seq GEO:GSE60682** We can see better resolution of GWAS categories by their p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell, one of the main components of the immune system.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.mod.png)
 
+
+Here is an example of the better separation of p-values in the case of ATAC-Seq open chromatin regions in GM12878 cell line, a lymphoblastoid cell line produced from the blood (B-lyphocytes) of a female donor with northern and western European ancestry. When tested with the standard binomial test the top category is relatively small and unrelated Diastolic blood pressure dataset. When modified binomial is applied, we obtained better resolution of GWAS categories, with the immune- category, Crohns disease, being the top category and other immune- categories, Multiple sclerosis, Asthma and Ulcerative colitis, being among the top categories, which is consistent with the fact that this cell line orginates from an immune cell. In addition we obtained much higher ranking for some types of cancers, e.g. breast cancer, which is in line with the fact that these cells originate from a (lymphoblastoid) cancer.
 
 **Example of standard binomial test - GM12878 cell line ATAC-Seq GEO:GSE47753** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/GM12878.GSE47753.binomial.png)
 
-**Example of modified binomial test - GM12878 cell line ATAC-Seq GEO:GSE47753** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
+**Example of modified binomial test - GM12878 cell line ATAC-Seq GEO:GSE47753** We can see better resolution of GWAS categories by their p-values. Note that modified binomial gives immune- related categories (Crohns disease, Multiple sclerosis, Asthma and Ulcerative colitis) as top ones, which is consistent with the immune- origin of GM12878.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/GM12878.GSE47753.binomial.mod.png)
