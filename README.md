@@ -20,12 +20,21 @@ Therefore, we modified the calculation of the probability to include the probabi
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/Glioblastoma.ENCODE.binomial.mod.png)
 
-Another example of the better separation of p-values is the example of ATAC-Seq open chromatin regions in CD4 T- cells. When tested with the standard binomial test the immune-related categories do not emerge to the top of the list, while the top categories are not immune- related and are again either relatively small or unrelated datasets (CardiogramplusC4D, Coronary Heart disease). When modified binomial is applied, we obtained better resolution of GWAS categories, with the immune- category, Rheumatoid arthritis, being the top category and another immune- category, Crohns disease, being among the top categories.
+Another example of the better separation of p-values is the example of ATAC-Seq open chromatin regions in CD4+ T- cells. When tested with the standard binomial test the immune-related categories do not emerge to the top of the list, while the top categories are not immune- related and are again either relatively small or unrelated datasets (CardiogramplusC4D, Coronary Heart disease). When modified binomial is applied, we obtained better resolution of GWAS categories, with the immune- category, Rheumatoid arthritis, being the top category and another immune- category, Crohns disease, being among the top categories. Especially, this is relevant as it is known that Rheumatoid arthritis is a chronic inflammatory syndrome with a central role of CD4+ T-cells and is characterized with aberrant pathways of CD4+ T-cell activation.
 
-**Example of standard binomial test - CD4 T-Cell ATAC-Seq GEO:GSE60682** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
+**Example of standard binomial test - CD4+ T-Cell ATAC-Seq GEO:GSE60682** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.png)
 
-**Example of modified binomial test - CD4 T-Cell ATAC-Seq GEO:GSE60682** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
+**Example of modified binomial test - CD4+ T-Cell ATAC-Seq GEO:GSE60682** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
 
 ![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/CD4TCell.GSE60682.binomial.mod.png)
+
+
+**Example of standard binomial test - GM12878 cell line ATAC-Seq GEO:GSE47753** GWAS categories did not resolve well according to the p-values. Negative log p-value and fold change are proportional and the graph is nearly a diagonal.
+
+![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/GM12878.GSE47753.binomial.png)
+
+**Example of modified binomial test - GM12878 cell line ATAC-Seq GEO:GSE47753** We can see better resolution of GWAS categories by thier p-values. Note that modified binomial gives immune- related categories (Rheumatoid arthritis, Crohns disease) as top ones, as expected for a CD4 T cell with the blood origin.
+
+![ScreenShot](https://github.com/milospjanic/IntegrativeFunctionalGenomics/blob/master/GM12878.GSE47753.binomial.mod.png)
