@@ -6,9 +6,8 @@ This is the repository for scripts that were used in paper:
 
 *Miller and Pjanic et al, 2016, Nature Communications.*
 
-
 #bed2GwasCatalogBinomialGgplot
-This script will calculate binomial p-values and fold change of genomic overlaps between the input bed file and various GWAS categories.
+This script will calculate binomial p-values and fold change of genomic overlaps between the input bed file and various GWAS categories. Usage is fairly simple and the output file is a publication ready pdf that is made in **ggplot2** using the **wesanderson** color palette in R. 
 
 #bed2GwasCatalogBinomialMod1Ggplot
 The modification of the binomial test includes calculation of the binomial p-value using modified probability of the base nucleotide to localize in the tested region. In the standard binomial test, one uses the probability of the base nucleotide to be localized in the tested input regions of the bed file, which corresponds to the percent of input bed in the human genome. This approach is robust and less sensitive towards the larger (but not smaller) sizes of the tested GWAS category, however it does not resolve well the p-values of various categories, which you can see in the examples provides. In addition, calculated P-value will approximately correspond to the fold change (number of overlaps/total number of GWAS variants), due to the fact in addition to number of overlaps/total number of GWAS variants (that correspond to the fold change) the only parameter used to calculate binomial p-value is the probability of a base to be in the input region and which is constant for each tested GWAS category. Hence, this is the reason the p-value/fold change plot will look almost diagonal in every example.
